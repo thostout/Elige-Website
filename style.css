@@ -125,3 +125,27 @@ video{
     font-size: 20px;
     font-style: oblique;
 }
+.footer_2{
+    text-align: center;
+    font-size: 14px;
+    padding: 10%;
+}
+/* Flex container for all stats */
+#stats {
+    display: flex; /* Enable Flexbox */
+    flex-direction: row; /* Align items in a row */
+    justify-content: space-between; /* Distribute evenly across the page */
+    align-items: center; /* Vertically align the text in the row */
+    gap: 20px; /* Optional: Add spacing between items */
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 5%;
+  }
+  
+  /* Each stat (label + value) */
+  .stat {
+    display: flex; /* Make each label-value pair a flex container */
+    flex-direction: row; /* Align label and value horizontally */
+    gap: 5px; /* Spacing between label and value */
+    text-align: center;
+  }
