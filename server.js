@@ -7,7 +7,7 @@ const { HLTV } = require('hltv');
 // Initialize Express application
 const app = express();
 const PORT = 3000; // Port for the server
-const cors = require('cors');
+app.use(cors({origin:'https://eligecs2stats.netlify.app'})); // Enable Cross-Origin Resource Sharing (CORS)
 
 let eligeStatsResponse = null
 let lastStatsUpdate = null
