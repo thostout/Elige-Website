@@ -1,5 +1,8 @@
 // Fetch data from the server
-fetch('http://localhost:3000/elige-stats')
+const isLocalhost = window.location.hostname === 'localhost';
+const serverUrl = isLocalhost ? 'http://localhost:3000' : 'https://elige-website.onrender.com'
+
+fetch(`${serverUrl}/elige-stats`)
   .then((response) => {
     if (!response.ok) {
       throw new Error('Network response was not ok');

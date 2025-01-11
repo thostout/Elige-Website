@@ -3,10 +3,12 @@ const express = require('express'); // Web server framework
 const cors = require('cors');
 const { HLTV } = require('hltv'); 
 
+
 // Initialize Express application
 const app = express();
 const PORT = 3000; // Port for the server
-app.use(cors());
+const cors = require('cors');
+
 let eligeStatsResponse = null
 let lastStatsUpdate = null
 
